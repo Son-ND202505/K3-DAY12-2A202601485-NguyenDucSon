@@ -53,7 +53,7 @@ jobs:
       - name: Deploy to Railway
         env:
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
-        run: railway up --service agent --detach
+        run: railway up --service "K3-DAY12-2A202601485-NguyenDucSon" --detach
 
       - name: Smoke test
         run: |
